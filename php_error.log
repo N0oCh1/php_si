@@ -1,0 +1,244 @@
+[28-May-2025 21:09:42 UTC] PHP Fatal error:  Uncaught Error: Typed property RegistrarUsuarios::$password must not be accessed before initialization in D:\wamp64\www\login\clases\c_RegistrarUsuario.php:52
+Stack trace:
+#0 D:\wamp64\www\login\clases\c_RegistrarUsuario.php(34): RegistrarUsuarios->encriptarData()
+#1 D:\wamp64\www\login\registrar\recoger.php(15): RegistrarUsuarios->GuardarUsuario()
+#2 {main}
+  thrown in D:\wamp64\www\login\clases\c_RegistrarUsuario.php on line 52
+[28-May-2025 21:16:33 UTC] PHP Warning:  Undefined variable $base64 in D:\wamp64\www\login\registrar\recoger.php on line 20
+[28-May-2025 21:16:33 UTC] PHP Stack trace:
+[28-May-2025 21:16:33 UTC] PHP   1. {main}() D:\wamp64\www\login\registrar\recoger.php:0
+[28-May-2025 21:20:03 UTC] PHP Warning:  Undefined variable $base64 in D:\wamp64\www\login\registrar\recoger.php on line 29
+[28-May-2025 21:20:03 UTC] PHP Stack trace:
+[28-May-2025 21:20:03 UTC] PHP   1. {main}() D:\wamp64\www\login\registrar\recoger.php:0
+[28-May-2025 21:20:30 UTC] PHP Warning:  Undefined variable $base64 in D:\wamp64\www\login\registrar\recoger.php on line 37
+[28-May-2025 21:20:30 UTC] PHP Stack trace:
+[28-May-2025 21:20:30 UTC] PHP   1. {main}() D:\wamp64\www\login\registrar\recoger.php:0
+[28-May-2025 21:20:50 UTC] PHP Warning:  Undefined variable $base64 in D:\wamp64\www\login\registrar\recoger.php on line 37
+[28-May-2025 21:20:50 UTC] PHP Stack trace:
+[28-May-2025 21:20:50 UTC] PHP   1. {main}() D:\wamp64\www\login\registrar\recoger.php:0
+[28-May-2025 21:20:57 UTC] PHP Warning:  Undefined variable $base64 in D:\wamp64\www\login\registrar\recoger.php on line 37
+[28-May-2025 21:20:57 UTC] PHP Stack trace:
+[28-May-2025 21:20:57 UTC] PHP   1. {main}() D:\wamp64\www\login\registrar\recoger.php:0
+[28-May-2025 21:21:10 UTC] PHP Warning:  Undefined variable $base64 in D:\wamp64\www\login\registrar\recoger.php on line 37
+[28-May-2025 21:21:10 UTC] PHP Stack trace:
+[28-May-2025 21:21:10 UTC] PHP   1. {main}() D:\wamp64\www\login\registrar\recoger.php:0
+[28-May-2025 21:48:54 UTC] PHP Warning:  Undefined variable $id in D:\wamp64\www\login\registrar\recoger.php on line 14
+[28-May-2025 21:48:54 UTC] PHP Stack trace:
+[28-May-2025 21:48:54 UTC] PHP   1. {main}() D:\wamp64\www\login\registrar\recoger.php:0
+[28-May-2025 21:48:54 UTC] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in D:\wamp64\www\login\clases\c_RegistrarUsuario.php:48
+Stack trace:
+#0 D:\wamp64\www\login\registrar\recoger.php(15): RegistrarUsuarios->GuardarUsuario()
+#1 {main}
+  thrown in D:\wamp64\www\login\clases\c_RegistrarUsuario.php on line 48
+[28-May-2025 21:49:42 UTC] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in D:\wamp64\www\login\clases\c_RegistrarUsuario.php:47
+Stack trace:
+#0 D:\wamp64\www\login\registrar\recoger.php(15): RegistrarUsuarios->GuardarUsuario()
+#1 {main}
+  thrown in D:\wamp64\www\login\clases\c_RegistrarUsuario.php on line 47
+[28-May-2025 21:52:43 UTC] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in D:\wamp64\www\login\registrar\recoger.php:18
+Stack trace:
+#0 {main}
+  thrown in D:\wamp64\www\login\registrar\recoger.php on line 18
+[28-May-2025 21:52:47 UTC] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in D:\wamp64\www\login\registrar\recoger.php:18
+Stack trace:
+#0 {main}
+  thrown in D:\wamp64\www\login\registrar\recoger.php on line 18
+[28-May-2025 21:53:24 UTC] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in D:\wamp64\www\login\clases\c_RegistrarUsuario.php:47
+Stack trace:
+#0 D:\wamp64\www\login\registrar\recoger.php(16): RegistrarUsuarios->GuardarUsuario()
+#1 {main}
+  thrown in D:\wamp64\www\login\clases\c_RegistrarUsuario.php on line 47
+[28-May-2025 21:53:57 UTC] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in D:\wamp64\www\login\clases\c_RegistrarUsuario.php:47
+Stack trace:
+#0 D:\wamp64\www\login\registrar\recoger.php(17): RegistrarUsuarios->GuardarUsuario()
+#1 {main}
+  thrown in D:\wamp64\www\login\clases\c_RegistrarUsuario.php on line 47
+[28-May-2025 21:54:10 UTC] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in D:\wamp64\www\login\registrar\recoger.php:19
+Stack trace:
+#0 {main}
+  thrown in D:\wamp64\www\login\registrar\recoger.php on line 19
+[28-May-2025 21:54:15 UTC] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in D:\wamp64\www\login\registrar\recoger.php:19
+Stack trace:
+#0 {main}
+  thrown in D:\wamp64\www\login\registrar\recoger.php on line 19
+[28-May-2025 21:55:59 UTC] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in D:\wamp64\www\login\registrar\recoger.php:19
+Stack trace:
+#0 {main}
+  thrown in D:\wamp64\www\login\registrar\recoger.php on line 19
+[28-May-2025 21:58:16 UTC] PHP Fatal error:  Uncaught Error: Object of class PDOStatement could not be converted to string in D:\wamp64\www\login\registrar\recoger.php:19
+Stack trace:
+#0 {main}
+  thrown in D:\wamp64\www\login\registrar\recoger.php on line 19
+[28-May-2025 21:58:24 UTC] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in D:\wamp64\www\login\registrar\recoger.php:19
+Stack trace:
+#0 {main}
+  thrown in D:\wamp64\www\login\registrar\recoger.php on line 19
+[28-May-2025 22:00:57 UTC] PHP Warning:  Undefined variable $base64 in D:\wamp64\www\login\registrar\recoger.php on line 40
+[28-May-2025 22:00:57 UTC] PHP Stack trace:
+[28-May-2025 22:00:57 UTC] PHP   1. {main}() D:\wamp64\www\login\registrar\recoger.php:0
+[28-May-2025 22:01:27 UTC] PHP Warning:  Undefined variable $base64 in D:\wamp64\www\login\registrar\recoger.php on line 40
+[28-May-2025 22:01:27 UTC] PHP Stack trace:
+[28-May-2025 22:01:27 UTC] PHP   1. {main}() D:\wamp64\www\login\registrar\recoger.php:0
+[28-May-2025 22:02:35 UTC] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in D:\wamp64\www\login\clases\c_RegistrarUsuario.php:47
+Stack trace:
+#0 D:\wamp64\www\login\registrar\recoger.php(17): RegistrarUsuarios->GuardarUsuario()
+#1 {main}
+  thrown in D:\wamp64\www\login\clases\c_RegistrarUsuario.php on line 47
+[28-May-2025 22:02:53 UTC] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in D:\wamp64\www\login\clases\c_RegistrarUsuario.php:47
+Stack trace:
+#0 D:\wamp64\www\login\registrar\recoger.php(17): RegistrarUsuarios->GuardarUsuario()
+#1 {main}
+  thrown in D:\wamp64\www\login\clases\c_RegistrarUsuario.php on line 47
+[28-May-2025 22:04:19 UTC] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in D:\wamp64\www\login\clases\c_RegistrarUsuario.php:72
+Stack trace:
+#0 D:\wamp64\www\login\registrar\recoger.php(15): RegistrarUsuarios->getData()
+#1 {main}
+  thrown in D:\wamp64\www\login\clases\c_RegistrarUsuario.php on line 72
+[28-May-2025 22:04:20 UTC] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in D:\wamp64\www\login\clases\c_RegistrarUsuario.php:72
+Stack trace:
+#0 D:\wamp64\www\login\registrar\recoger.php(15): RegistrarUsuarios->getData()
+#1 {main}
+  thrown in D:\wamp64\www\login\clases\c_RegistrarUsuario.php on line 72
+[28-May-2025 22:04:21 UTC] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in D:\wamp64\www\login\clases\c_RegistrarUsuario.php:72
+Stack trace:
+#0 D:\wamp64\www\login\registrar\recoger.php(15): RegistrarUsuarios->getData()
+#1 {main}
+  thrown in D:\wamp64\www\login\clases\c_RegistrarUsuario.php on line 72
+[28-May-2025 22:04:22 UTC] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in D:\wamp64\www\login\clases\c_RegistrarUsuario.php:72
+Stack trace:
+#0 D:\wamp64\www\login\registrar\recoger.php(15): RegistrarUsuarios->getData()
+#1 {main}
+  thrown in D:\wamp64\www\login\clases\c_RegistrarUsuario.php on line 72
+[28-May-2025 22:04:22 UTC] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in D:\wamp64\www\login\clases\c_RegistrarUsuario.php:72
+Stack trace:
+#0 D:\wamp64\www\login\registrar\recoger.php(15): RegistrarUsuarios->getData()
+#1 {main}
+  thrown in D:\wamp64\www\login\clases\c_RegistrarUsuario.php on line 72
+[28-May-2025 22:04:22 UTC] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in D:\wamp64\www\login\clases\c_RegistrarUsuario.php:72
+Stack trace:
+#0 D:\wamp64\www\login\registrar\recoger.php(15): RegistrarUsuarios->getData()
+#1 {main}
+  thrown in D:\wamp64\www\login\clases\c_RegistrarUsuario.php on line 72
+[28-May-2025 22:04:22 UTC] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in D:\wamp64\www\login\clases\c_RegistrarUsuario.php:72
+Stack trace:
+#0 D:\wamp64\www\login\registrar\recoger.php(15): RegistrarUsuarios->getData()
+#1 {main}
+  thrown in D:\wamp64\www\login\clases\c_RegistrarUsuario.php on line 72
+[28-May-2025 22:06:11 UTC] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in D:\wamp64\www\login\clases\c_RegistrarUsuario.php:47
+Stack trace:
+#0 D:\wamp64\www\login\registrar\recoger.php(17): RegistrarUsuarios->GuardarUsuario()
+#1 {main}
+  thrown in D:\wamp64\www\login\clases\c_RegistrarUsuario.php on line 47
+[28-May-2025 22:09:17 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in D:\wamp64\www\login\clases\c_RegistrarUsuario.php:72
+Stack trace:
+#0 D:\wamp64\www\login\registrar\recoger.php(15): RegistrarUsuarios->getData()
+#1 {main}
+  thrown in D:\wamp64\www\login\clases\c_RegistrarUsuario.php on line 72
+[28-May-2025 22:10:27 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in D:\wamp64\www\login\clases\c_RegistrarUsuario.php:72
+Stack trace:
+#0 D:\wamp64\www\login\registrar\recoger.php(15): RegistrarUsuarios->getData()
+#1 {main}
+  thrown in D:\wamp64\www\login\clases\c_RegistrarUsuario.php on line 72
+[28-May-2025 22:13:23 UTC] PHP Warning:  Undefined property: stdClass::$usuario in D:\wamp64\www\login\clases\c_RegistrarUsuario.php on line 74
+[28-May-2025 22:13:23 UTC] PHP Stack trace:
+[28-May-2025 22:13:23 UTC] PHP   1. {main}() D:\wamp64\www\login\registrar\recoger.php:0
+[28-May-2025 22:13:23 UTC] PHP   2. RegistrarUsuarios->getData() D:\wamp64\www\login\registrar\recoger.php:15
+[28-May-2025 22:13:23 UTC] PHP Warning:  Undefined property: stdClass::$magicHash in D:\wamp64\www\login\clases\c_RegistrarUsuario.php on line 75
+[28-May-2025 22:13:23 UTC] PHP Stack trace:
+[28-May-2025 22:13:23 UTC] PHP   1. {main}() D:\wamp64\www\login\registrar\recoger.php:0
+[28-May-2025 22:13:23 UTC] PHP   2. RegistrarUsuarios->getData() D:\wamp64\www\login\registrar\recoger.php:15
+[28-May-2025 22:13:23 UTC] PHP Warning:  Undefined property: stdClass::$correo in D:\wamp64\www\login\clases\c_RegistrarUsuario.php on line 77
+[28-May-2025 22:13:23 UTC] PHP Stack trace:
+[28-May-2025 22:13:23 UTC] PHP   1. {main}() D:\wamp64\www\login\registrar\recoger.php:0
+[28-May-2025 22:13:23 UTC] PHP   2. RegistrarUsuarios->getData() D:\wamp64\www\login\registrar\recoger.php:15
+[28-May-2025 22:13:23 UTC] PHP Warning:  Undefined property: stdClass::$usuario in D:\wamp64\www\login\clases\c_RegistrarUsuario.php on line 74
+[28-May-2025 22:13:23 UTC] PHP Stack trace:
+[28-May-2025 22:13:23 UTC] PHP   1. {main}() D:\wamp64\www\login\registrar\recoger.php:0
+[28-May-2025 22:13:23 UTC] PHP   2. RegistrarUsuarios->getData() D:\wamp64\www\login\registrar\recoger.php:19
+[28-May-2025 22:13:23 UTC] PHP Warning:  Undefined property: stdClass::$magicHash in D:\wamp64\www\login\clases\c_RegistrarUsuario.php on line 75
+[28-May-2025 22:13:23 UTC] PHP Stack trace:
+[28-May-2025 22:13:23 UTC] PHP   1. {main}() D:\wamp64\www\login\registrar\recoger.php:0
+[28-May-2025 22:13:23 UTC] PHP   2. RegistrarUsuarios->getData() D:\wamp64\www\login\registrar\recoger.php:19
+[28-May-2025 22:13:23 UTC] PHP Warning:  Undefined property: stdClass::$correo in D:\wamp64\www\login\clases\c_RegistrarUsuario.php on line 77
+[28-May-2025 22:13:23 UTC] PHP Stack trace:
+[28-May-2025 22:13:23 UTC] PHP   1. {main}() D:\wamp64\www\login\registrar\recoger.php:0
+[28-May-2025 22:13:23 UTC] PHP   2. RegistrarUsuarios->getData() D:\wamp64\www\login\registrar\recoger.php:19
+[28-May-2025 22:13:23 UTC] PHP Warning:  Undefined array key 0 in D:\wamp64\www\login\registrar\recoger.php on line 20
+[28-May-2025 22:13:23 UTC] PHP Stack trace:
+[28-May-2025 22:13:23 UTC] PHP   1. {main}() D:\wamp64\www\login\registrar\recoger.php:0
+[28-May-2025 22:13:23 UTC] PHP Warning:  Attempt to read property "nombre" on null in D:\wamp64\www\login\registrar\recoger.php on line 20
+[28-May-2025 22:13:23 UTC] PHP Stack trace:
+[28-May-2025 22:13:23 UTC] PHP   1. {main}() D:\wamp64\www\login\registrar\recoger.php:0
+[28-May-2025 22:13:23 UTC] PHP Warning:  Undefined variable $base64 in D:\wamp64\www\login\registrar\recoger.php on line 41
+[28-May-2025 22:13:23 UTC] PHP Stack trace:
+[28-May-2025 22:13:23 UTC] PHP   1. {main}() D:\wamp64\www\login\registrar\recoger.php:0
+[28-May-2025 22:13:55 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in D:\wamp64\www\login\clases\c_RegistrarUsuario.php:72
+Stack trace:
+#0 D:\wamp64\www\login\registrar\recoger.php(15): RegistrarUsuarios->getData()
+#1 {main}
+  thrown in D:\wamp64\www\login\clases\c_RegistrarUsuario.php on line 72
+[28-May-2025 22:16:17 UTC] PHP Warning:  Array to string conversion in D:\wamp64\www\login\registrar\recoger.php on line 20
+[28-May-2025 22:16:17 UTC] PHP Stack trace:
+[28-May-2025 22:16:17 UTC] PHP   1. {main}() D:\wamp64\www\login\registrar\recoger.php:0
+[28-May-2025 22:16:17 UTC] PHP Warning:  Undefined variable $base64 in D:\wamp64\www\login\registrar\recoger.php on line 41
+[28-May-2025 22:16:17 UTC] PHP Stack trace:
+[28-May-2025 22:16:17 UTC] PHP   1. {main}() D:\wamp64\www\login\registrar\recoger.php:0
+[28-May-2025 22:19:40 UTC] PHP Warning:  Undefined variable $base64 in D:\wamp64\www\login\registrar\recoger.php on line 41
+[28-May-2025 22:19:40 UTC] PHP Stack trace:
+[28-May-2025 22:19:40 UTC] PHP   1. {main}() D:\wamp64\www\login\registrar\recoger.php:0
+[28-May-2025 22:23:45 UTC] PHP Warning:  Undefined array key "correo" in D:\wamp64\www\login\registrar\recoger.php on line 28
+[28-May-2025 22:23:45 UTC] PHP Stack trace:
+[28-May-2025 22:23:45 UTC] PHP   1. {main}() D:\wamp64\www\login\registrar\recoger.php:0
+[28-May-2025 22:23:45 UTC] PHP Fatal error:  Uncaught TypeError: Sonata\GoogleAuthenticator\GoogleQrUrl::generate(): Argument #1 ($accountName) must be of type string, null given, called in D:\wamp64\www\login\registrar\recoger.php on line 28 and defined in D:\wamp64\www\login\vendor\sonata-project\google-authenticator\src\GoogleQrUrl.php:59
+Stack trace:
+#0 D:\wamp64\www\login\registrar\recoger.php(28): Sonata\GoogleAuthenticator\GoogleQrUrl::generate(NULL, 'ZAOWQRSBLZCKNMS...', 'test')
+#1 {main}
+  thrown in D:\wamp64\www\login\vendor\sonata-project\google-authenticator\src\GoogleQrUrl.php on line 59
+[28-May-2025 22:24:07 UTC] PHP Warning:  Undefined variable $base64 in D:\wamp64\www\login\registrar\recoger.php on line 45
+[28-May-2025 22:24:07 UTC] PHP Stack trace:
+[28-May-2025 22:24:07 UTC] PHP   1. {main}() D:\wamp64\www\login\registrar\recoger.php:0
+[28-May-2025 22:32:07 UTC] PHP Warning:  Trying to access array offset on false in D:\wamp64\www\login\clases\c_RegistrarUsuario.php on line 71
+[28-May-2025 22:32:07 UTC] PHP Stack trace:
+[28-May-2025 22:32:07 UTC] PHP   1. {main}() D:\wamp64\www\login\registrar\recoger.php:0
+[28-May-2025 22:32:07 UTC] PHP   2. RegistrarUsuarios->getData() D:\wamp64\www\login\registrar\recoger.php:16
+[28-May-2025 22:32:07 UTC] PHP Warning:  Undefined variable $base64 in D:\wamp64\www\login\registrar\recoger.php on line 44
+[28-May-2025 22:32:07 UTC] PHP Stack trace:
+[28-May-2025 22:32:07 UTC] PHP   1. {main}() D:\wamp64\www\login\registrar\recoger.php:0
+[28-May-2025 22:33:56 UTC] PHP Warning:  Undefined variable $base64 in D:\wamp64\www\login\registrar\recoger.php on line 44
+[28-May-2025 22:33:56 UTC] PHP Stack trace:
+[28-May-2025 22:33:56 UTC] PHP   1. {main}() D:\wamp64\www\login\registrar\recoger.php:0
+[28-May-2025 22:34:00 UTC] PHP Warning:  Undefined variable $base64 in D:\wamp64\www\login\registrar\recoger.php on line 44
+[28-May-2025 22:34:00 UTC] PHP Stack trace:
+[28-May-2025 22:34:00 UTC] PHP   1. {main}() D:\wamp64\www\login\registrar\recoger.php:0
+[28-May-2025 22:34:02 UTC] PHP Warning:  Undefined variable $base64 in D:\wamp64\www\login\registrar\recoger.php on line 44
+[28-May-2025 22:34:02 UTC] PHP Stack trace:
+[28-May-2025 22:34:02 UTC] PHP   1. {main}() D:\wamp64\www\login\registrar\recoger.php:0
+[28-May-2025 22:34:03 UTC] PHP Warning:  Undefined variable $base64 in D:\wamp64\www\login\registrar\recoger.php on line 44
+[28-May-2025 22:34:03 UTC] PHP Stack trace:
+[28-May-2025 22:34:03 UTC] PHP   1. {main}() D:\wamp64\www\login\registrar\recoger.php:0
+[28-May-2025 22:34:04 UTC] PHP Warning:  Undefined variable $base64 in D:\wamp64\www\login\registrar\recoger.php on line 44
+[28-May-2025 22:34:04 UTC] PHP Stack trace:
+[28-May-2025 22:34:04 UTC] PHP   1. {main}() D:\wamp64\www\login\registrar\recoger.php:0
+[28-May-2025 22:34:05 UTC] PHP Warning:  Undefined variable $base64 in D:\wamp64\www\login\registrar\recoger.php on line 44
+[28-May-2025 22:34:05 UTC] PHP Stack trace:
+[28-May-2025 22:34:05 UTC] PHP   1. {main}() D:\wamp64\www\login\registrar\recoger.php:0
+[28-May-2025 22:34:06 UTC] PHP Warning:  Undefined variable $base64 in D:\wamp64\www\login\registrar\recoger.php on line 44
+[28-May-2025 22:34:06 UTC] PHP Stack trace:
+[28-May-2025 22:34:06 UTC] PHP   1. {main}() D:\wamp64\www\login\registrar\recoger.php:0
+[28-May-2025 22:38:13 UTC] PHP Warning:  Undefined variable $base64 in D:\wamp64\www\login\registrar\recoger.php on line 44
+[28-May-2025 22:38:13 UTC] PHP Stack trace:
+[28-May-2025 22:38:13 UTC] PHP   1. {main}() D:\wamp64\www\login\registrar\recoger.php:0
+[28-May-2025 22:38:15 UTC] PHP Warning:  Undefined variable $base64 in D:\wamp64\www\login\registrar\recoger.php on line 44
+[28-May-2025 22:38:15 UTC] PHP Stack trace:
+[28-May-2025 22:38:15 UTC] PHP   1. {main}() D:\wamp64\www\login\registrar\recoger.php:0
+[28-May-2025 22:46:22 UTC] PHP Warning:  Undefined variable $base64 in D:\wamp64\www\login\registrar\recoger.php on line 44
+[28-May-2025 22:46:22 UTC] PHP Stack trace:
+[28-May-2025 22:46:22 UTC] PHP   1. {main}() D:\wamp64\www\login\registrar\recoger.php:0
+[28-May-2025 23:48:53 UTC] PHP Warning:  Trying to access array offset on false in D:\wamp64\www\login\clases\c_RegistrarUsuario.php on line 72
+[28-May-2025 23:48:53 UTC] PHP Stack trace:
+[28-May-2025 23:48:53 UTC] PHP   1. {main}() D:\wamp64\www\login\registrar\recoger.php:0
+[28-May-2025 23:48:53 UTC] PHP   2. RegistrarUsuarios->getData() D:\wamp64\www\login\registrar\recoger.php:35
+[28-May-2025 23:53:03 UTC] PHP Warning:  Trying to access array offset on false in D:\wamp64\www\login\clases\c_RegistrarUsuario.php on line 72
+[28-May-2025 23:53:03 UTC] PHP Stack trace:
+[28-May-2025 23:53:03 UTC] PHP   1. {main}() D:\wamp64\www\login\registrar\recoger.php:0
+[28-May-2025 23:53:03 UTC] PHP   2. RegistrarUsuarios->getData() D:\wamp64\www\login\registrar\recoger.php:35
