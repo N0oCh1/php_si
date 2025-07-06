@@ -6,9 +6,9 @@
 					<div class="b-service">
 						<div class="service-image m-programming">
 						</div>
-						<h3 class="centered">Etiqueta</h3>
+						<h3 class="centered">Noticias</h3>
 						<p class="centered">
-                        <a href="#" class="dark-link">Etiqueta 1</a>
+                        <a href="./noticias/index.php" class="dark-link">Modulo Noticias</a>
 						</p>
 					</div>
 					<!-- End Icon Box -->
