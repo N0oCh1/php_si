@@ -58,7 +58,7 @@
             </tr>
             <tr>
               <td>Contrase&ntilde;a:</td>
-              <td><input  id="contrasena" name="contrasena" type="text" /></td>
+              <td><input  id="contrasena" name="contrasena" type="password" /></td>
               <label for="label"></label>
             </tr>
              <input type="hidden" name="tolog" id="tolog" value="true"/>

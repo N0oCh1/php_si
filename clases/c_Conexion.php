@@ -157,18 +157,34 @@ public function insertSeguro($tb_name, $data)
 	public function nums($string = "", $stmt = null)
 	{
 		if ($string) {
-			$stmt = $this->query($string);
+			try{
+				$stmt = $this->conexion->prepare($string);
+				$stmt->execute();
+				$this->total = $stmt ? $stmt->rowCount() : 0;
+				return $this->total;
+			}catch(PDOException $e){
+				echo "Error en al ejecurtar query: ".$e->getMessage();
+				return null;
+			}
 		}
-		$this->total = $stmt ? $stmt->rowCount() : 0; // Cuenta el número de filas
-		return $this->total;
+		return null;
+		 // Cuenta el número de filas
 	}
 
 	public function objects($string = "", $stmt = null)
 	{
 		if ($string) {
-			$stmt = $this->query($string);
+			try{
+				$stmt = $this->conexion->prepare($string);
+				$stmt->execute();
+				return $stmt ? $stmt->fetch(PDO::FETCH_OBJ) : null; // Retorna un objeto
+
+			}catch(PDOException $e){
+				echo "Error en al ejecurtar query: ".$e->getMessage();
+				return null;
+			}
 		}
-		return $stmt ? $stmt->fetch(PDO::FETCH_OBJ) : null; // Retorna un objeto
+		return null; // Retorna un objeto
 	}
 
 	public function insert_id()
