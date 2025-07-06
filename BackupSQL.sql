@@ -16,6 +16,33 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Table structure for table `noticias`
+--
+
+DROP TABLE IF EXISTS `noticias`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `noticias` (
+  `id` int NOT NULL AUTO_INCREMENT COMMENT 'Primary Key',
+  `titulo` varchar(50) DEFAULT NULL,
+  `contenido` text,
+  `fecha` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `tipo-noticia` varchar(30) NOT NULL DEFAULT 'sin asignar',
+  `imagen` longblob,
+  `tipo-imagen` varchar(100) DEFAULT NULL,
+  `autor` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `noticias`
+--
+
+/*!40000 ALTER TABLE `noticias` DISABLE KEYS */;
+/*!40000 ALTER TABLE `noticias` ENABLE KEYS */;
+
+--
 -- Table structure for table `table_name`
 --
 
@@ -84,4 +111,4 @@ INSERT INTO `usuarios` VALUES (5,'test','test','test','test@test.com','$2y$12$fV
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-07-06 16:31:43
+-- Dump completed on 2025-07-06 17:47:42
