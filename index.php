@@ -1,6 +1,6 @@
 <?PHP
 session_start();  
-include ("clases/mysql.inc.php");	
+include ("clases/c_Conexion.php");	
 $db = new mod_db();
 
 
