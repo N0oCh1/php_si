@@ -3,26 +3,61 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .Main{
   position: relative;
   display: grid;
   height: 100vh;
-  grid-template-columns: 70% auto;
+  grid-template-areas: 
+  "head head head head head head"
+  "noti noti noti noti noti busq"
+  "noti noti noti noti noti busq"
+  "noti noti noti noti noti busq"
+  "noti noti noti noti noti busq"
+  "noti noti noti noti noti busq"
+  ;
+}
+.encabezado{
+  grid-area: head;
+  padding-inline: 24px;
+  height: 100px;
 }
 .noticia-container{
+  grid-area: noti;
   background-color: rgb(248, 233, 204);
   display: flex;
+  padding: 24px;
   flex-direction: column;
   gap:10px;
   overflow-y: scroll;
 }
 .busqueda-container{
+  grid-area: busq;
   background-color: rgb(250, 178, 69);
+  padding: 24px;
 }
 .noticia{
+  display: flex;
+  flex-direction: column;
   padding-block: 100px;
-  background-color: brown;
+  background-color: rgb(255, 255, 255);
+  border-style: dashed solid;
+  border-color: black;
+  border-width: 3px;
 }
+.inputNoticia{
+  display:flex;
+  flex-direction: column;
+}
+.inputNoticia input[type="text"] {
+  padding: 4px 8px;
+  width: 60%;
+  font-size: medium;
+  font-style: italic;
+}
+
+
+
 ::-webkit-scrollbar{
   background-color: rgba(0, 245, 245, 0);
   width: 10px;

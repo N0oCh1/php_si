@@ -217,4 +217,19 @@ public function insertSeguro($tb_name, $data)
 		}
 		
 	}
+
+	public function obtenerNoticias() {
+		try{
+			$sql = "SELECT * FROM noticias";
+			$stml = $this->conexion->prepare($sql);
+			$stml->execute();
+			return $stml->fetchAll(PDO::FETCH_OBJ);
+		}
+		catch(PDOException $e){
+			throw new Error($e, 505);
+			return[
+				"mensaje_error" => "error de base de datos"
+			];
+		}
+	}
 }

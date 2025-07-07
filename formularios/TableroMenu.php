@@ -8,7 +8,7 @@
 						</div>
 						<h3 class="centered">Noticias</h3>
 						<p class="centered">
-                        <a href="./noticias/index.php" class="dark-link">Modulo Noticias</a>
+                        <a href="./noticias/index" class="dark-link">Modulo Noticias</a>
 						</p>
 					</div>
 					<!-- End Icon Box -->

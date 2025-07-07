@@ -32,7 +32,7 @@ CREATE TABLE `noticias` (
   `tipo-imagen` varchar(100) DEFAULT NULL,
   `autor` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,6 +40,7 @@ CREATE TABLE `noticias` (
 --
 
 /*!40000 ALTER TABLE `noticias` DISABLE KEYS */;
+INSERT INTO `noticias` VALUES (1,'ejemplo titulo','el perro pepe ','2025-07-06 23:22:49','noticia',NULL,NULL,'ruben'),(2,'titulo1','Jhon lenon','2025-07-06 23:23:17','noticia',NULL,NULL,'ruben'),(3,'dbawdawfa','awdawdawgdaw','2025-07-07 00:56:15','notcia',NULL,NULL,'ddddd'),(4,'dxzccczx','ffffffsdffsefs','2025-07-07 00:56:29','dd',NULL,NULL,'haoiwd');
 /*!40000 ALTER TABLE `noticias` ENABLE KEYS */;
 
 --
@@ -111,4 +112,4 @@ INSERT INTO `usuarios` VALUES (5,'test','test','test','test@test.com','$2y$12$fV
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-07-06 17:47:42
+-- Dump completed on 2025-07-06 19:58:21
