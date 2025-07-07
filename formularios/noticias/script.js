@@ -1,5 +1,5 @@
 let todasNoticias
-
+// Obtner datos al cargar la pagina
 window.addEventListener("load", async()=>{
   try{
     const response = await fetch("../../clases/c_noticia.php")
@@ -14,6 +14,7 @@ window.addEventListener("load", async()=>{
     document.body.innerHTML="Error al cargar datos"
   }
 })
+// Input de noticias cuando se escribe
 document.getElementById("buscarNoticia").addEventListener("input", (e)=>{
   const valor = e.target.value.toLowerCase().trim();
   if(valor === "") {
@@ -34,7 +35,7 @@ document.getElementById("buscarNoticia").addEventListener("input", (e)=>{
   VisualizarNoticias(datoFiltrado)
   return
 })
-
+// funcion generica para poner los resultados al contianer de noticias
 function VisualizarNoticias(noticias){
   const noticiaContainer = document.getElementById("noticias")
   noticiaContainer.innerHTML = ""
