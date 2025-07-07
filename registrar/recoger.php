@@ -9,7 +9,7 @@
 
 <body>
   <header>
-    <a href="/login">
+    <a href="../login">
       <button>
         Regresar al login
       </button>
