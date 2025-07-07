@@ -19,6 +19,9 @@
 }
 .encabezado{
   grid-area: head;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-inline: 24px;
   height: 100px;
 }
@@ -54,6 +57,14 @@
   width: 60%;
   font-size: medium;
   font-style: italic;
+}
+.inputCrearNoticia{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.crearNoticia {
+  padding: 8px 16px;
 }
 
 
