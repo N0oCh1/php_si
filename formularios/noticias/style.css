@@ -79,3 +79,18 @@
   width: 10px;
   padding: 10px;
 }
+
+.noticia img.miniatura {
+  width: 150px;
+  height: auto;
+  align-self: center;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.noticia img.miniatura:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}

@@ -27,9 +27,9 @@ CREATE TABLE `noticias` (
   `titulo` varchar(50) DEFAULT NULL,
   `contenido` text,
   `fecha` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  `tipo-noticia` varchar(30) NOT NULL DEFAULT 'sin asignar',
+  `tipo_noticia` varchar(30) NOT NULL DEFAULT 'sin asignar',
   `imagen` longblob,
-  `tipo-imagen` varchar(100) DEFAULT NULL,
+  `tipo_imagen` varchar(100) DEFAULT NULL,
   `autor` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -40,7 +40,18 @@ CREATE TABLE `noticias` (
 --
 
 /*!40000 ALTER TABLE `noticias` DISABLE KEYS */;
-INSERT INTO `noticias` VALUES (1,'ejemplo titulo','el perro pepe ','2025-07-06 23:22:49','noticia',NULL,NULL,'ruben'),(2,'titulo1','Jhon lenon','2025-07-06 23:23:17','noticia',NULL,NULL,'ruben'),(3,'dbawdawfa','awdawdawgdaw','2025-07-07 00:56:15','notcia',NULL,NULL,'ddddd'),(4,'dxzccczx','ffffffsdffsefs','2025-07-07 00:56:29','dd',NULL,NULL,'haoiwd');
+INSERT INTO `noticias` VALUES (1,'ejemplo titulo','el perro pepe ','2025-07-06 23:22:49','noticia',"imagesDb/686da6451b84c-Ruben-feng.jpg"," imagesDb/686da6451b84c-Ruben-feng.jpg",'ruben'),(2,'titulo1','Jhon lenon','2025-07-06 23:23:17','noticia',NULL,NULL,'ruben'),(3,'dbawdawfa','awdawdawgdaw','2025-07-07 00:56:15','notcia',NULL,NULL,'ddddd'),(4,'dxzccczx','ffffffsdffsefs','2025-07-07 00:56:29','dd',NULL,NULL,'haoiwd');
+INSERT INTO noticias (titulo, contenido, fecha, tipo_noticia, tipo_imagen, autor, imagen)
+VALUES (
+  'Aprende a hacer mewing en 10 sencillos pasos',
+  'Mewinistico',
+  '2025-07-08 17:57:37',
+  'sexual',
+  'image/png',
+  'V.kr',
+  'imagesDb/686da261c15a8-rey.png'
+);
+
 /*!40000 ALTER TABLE `noticias` ENABLE KEYS */;
 
 --
