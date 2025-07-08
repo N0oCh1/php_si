@@ -46,6 +46,8 @@ class ImagenUploader {
         ];
     }
 
+    //genera una version mas liviana de la imagen original
+    //para la miniatura
     private function generarMiniatura($ruta_original, $tipo_imagen) {
         list($ancho, $alto) = getimagesize($ruta_original);
         $nuevo_ancho = 100;

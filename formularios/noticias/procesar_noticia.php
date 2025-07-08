@@ -1,7 +1,7 @@
 <?php
 require_once '../../clases/ImagenUploader.php';
 require_once '../../clases/c_Conexion.php';
-
+//archivo temporal hasta que Roy implemente el formulario real
 $titulo = $_POST['titulo'];
 $contenido = $_POST['contenido'];
 $tipo = $_POST['tipo'];
