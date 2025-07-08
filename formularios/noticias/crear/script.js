@@ -16,3 +16,9 @@ document.getElementById("imagen").addEventListener("change", ()=>{
   container.appendChild(image);
 
 })
+
+document.getElementById("form-create-news").addEventListener("submit", async(e)=>{
+  e.preventDefault()
+  const formData = new FormData(e.target)
+  console.log("datos", ...formData)
+})
