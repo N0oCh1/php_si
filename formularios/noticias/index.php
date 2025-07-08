@@ -9,11 +9,9 @@
 </head>
 <body>
   <main class="Main">
-    <header class="encabezado">
-      <h1>
-        Encabezado
-      </h1>
-    </header>
+   <?php
+    include_once("../componente/header.php");
+   ?>
     <div class="noticia-container" id="noticias">
       
     </div>
@@ -29,9 +27,9 @@
         <h2>
           Tag Cloud
         </h2>
-        <a href="./crear/index.html?t=Noticia"><button class="crearNoticia">Agregar una noticia</button></a>
-        <a href="./crear/index.html?t=Evento"><button class="crearNoticia">Agregar un evento</button></a>
-        <a href="./crear/index.html?t=Deporte"><button class="crearNoticia">Agregar una noticia deportiva</button></a>
+        <a href="./crear/index?t=Noticia"><button class="crearNoticia">Agregar una noticia</button></a>
+        <a href="./crear/index?t=Evento"><button class="crearNoticia">Agregar un evento</button></a>
+        <a href="./crear/index?t=Deporte"><button class="crearNoticia">Agregar una noticia deportiva</button></a>
       </div>
     </div>
   </main>
