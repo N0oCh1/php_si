@@ -8,8 +8,9 @@ $tipo = $_POST['tipo'];
 $autor = $_POST['autor'];
 
 try {
-    $uploader = new ImagenUploader("noticias/imgesDb/");
-    $resultado = $uploader->procesarImagen($_FILES['imagen']); // Procesa imagen
+    $uploader = new ImagenUploader("imagesDb/");
+    // Procesa imagen
+    $resultado = $uploader->procesarImagen($_FILES['imagen']); 
 
     $ruta_imagen = $resultado['ruta_original'];
     $tipo_imagen = $resultado['tipo'];

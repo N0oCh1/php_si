@@ -44,7 +44,7 @@ function VisualizarNoticias(noticias) {
   const noticiaContainer = document.getElementById("noticias");
   noticiaContainer.innerHTML = "";
 
-  noticias.forEach(item => {
+  noticias.map(item => {
     const carta = document.createElement("div");
     carta.classList.add("noticia");
 
@@ -52,15 +52,12 @@ function VisualizarNoticias(noticias) {
     if (item.imagen) {
       const miniatura = document.createElement("img");
 
-      // Generar ruta de la miniatura
-      //(thumb es para la miniatura, existe una versión sin el
-      // thumb delante por si se quiere usar para otra cosa)
+      // Generar ruta de la miniatura (prefijo "thumb_")
       const thumbPath = item.imagen.replace(/([^\/]+)$/, "thumb_$1");
       miniatura.src = thumbPath;
       miniatura.alt = item.titulo;
       miniatura.classList.add("miniatura");
 
-      // Imagen clickeable para abrir la original
       miniatura.style.cursor = "pointer";
       miniatura.addEventListener("click", () => {
         window.open(item.imagen, "_blank");
