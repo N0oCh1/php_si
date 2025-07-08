@@ -27,9 +27,9 @@ CREATE TABLE `noticias` (
   `titulo` varchar(50) DEFAULT NULL,
   `contenido` text,
   `fecha` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  `tipo-noticia` varchar(30) NOT NULL DEFAULT 'sin asignar',
+  `tipo_noticia` varchar(30) NOT NULL DEFAULT 'sin asignar',
   `imagen` longblob,
-  `tipo-imagen` varchar(100) DEFAULT NULL,
+  `tipo_imagen` varchar(100) DEFAULT NULL,
   `autor` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
