@@ -6,9 +6,36 @@
   <title>Form</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);">
-  <main>
-    <form style="display: flex; flex-direction: column; margin: auto; gap: 12px; max-width: 400px; padding: 2rem; background-color: #f9f9f9; border-radius: 1rem;" 
+<style>
+   .boton-verde {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            
+        }
+
+        .boton-verde:hover {
+            background-color: #218838;
+        }
+        .volver {
+            margin: 50px 100px;
+            position: absolute;
+            top: 100px;
+            left: 200px;
+        }
+</style>
+<body style="background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; width:100%;  margin: 0;">
+<main style="width: 100%;  margin: auto;">
+
+<div class="volver">
+        <a class="boton-verde" href="../login.php">⬅ Volver</a>
+    </div>
+
+    <form style="display: flex; flex-direction: column; margin: auto; gap: 12px; width:100%; max-width: 400px; padding: 2rem; background-color: #f9f9f9; border-radius: 1rem;" 
           action="recoger.php" 
           method="POST"
     >
@@ -28,14 +55,9 @@
       <input type="text" required name="user" placeholder="User"/>
 
       <label for="hash">Contraseña</label>
-      <input type="password" required name="hash" placeholder="#jawd3" />
+<input type="password" required name="hash" placeholder="Ej. TuContraseñaSegura123" minlength="8" />
 
-      <label for="sex">Sexo</label>
-      <select name="sex">
-        <option value="">Selecciona un sexo</option>
-        <option value="Masculino">Masculino</option>
-        <option value="Femenino">Femenino</option>
-      </select>
+
       <input type="submit" value="Registrar Usuario" style="margin-top: 12px;"/>
     </form>
   </main>

@@ -7,13 +7,32 @@
   <title>Document</title>
 </head>
 
+<style>
+  .boton-verde {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .boton-verde:hover {
+            background-color: #218838;
+        }
+        .volver {
+            margin: 50px 100px;
+        }
+</style>
+
 <body>
   <header>
-    <a href="../login">
-      <button>
-        Regresar al login
-      </button>
-    </a>
+    
+
+    <div class="volver">
+        <a class="boton-verde" href="../login">⬅ Regresar al login</a>
+    </div>
   </header>
   <main style="display: flex; flex-direction: column; justify-content: center; align-items: center ; gap: 12px;">
     <?php

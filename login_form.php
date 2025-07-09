@@ -83,11 +83,8 @@
                     ?> </div>
       </table><br />
     </form>
-      <a href="./registrar/">
-        <button>
-          Registrarme
-        </button>
-      </a>
+          <button type="button" onclick="window.location.href='./registrar';">Registrarme</button>
+
   </div>
     <br />
 
