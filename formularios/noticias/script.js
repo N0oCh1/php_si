@@ -46,10 +46,15 @@ function VisualizarNoticias(noticias) {
 
   noticias.map(item => {
     const carta = document.createElement("div");
+    const contentContainer = document.createElement("div");
+    contentContainer.setAttribute("class", "content-container");
     carta.classList.add("noticia");
 
     // Mostrar imagen miniatura si existe
     if (item.imagen) {
+      const imgContainer = document.createElement("div");
+      imgContainer.setAttribute("class", "img-container");
+      
       const miniatura = document.createElement("img");
 
       // Generar ruta de la miniatura (prefijo "thumb_")
@@ -62,8 +67,8 @@ function VisualizarNoticias(noticias) {
       miniatura.addEventListener("click", () => {
         window.open(item.imagen, "_blank");
       });
-
-      carta.appendChild(miniatura);
+      imgContainer.appendChild(miniatura);
+      carta.appendChild(imgContainer);
     }
 
     const titulo = document.createElement("h2");
@@ -75,7 +80,8 @@ function VisualizarNoticias(noticias) {
     const autor = document.createElement("p");
     autor.innerHTML = `<strong>Autor:</strong> ${item.autor}`;
 
-    carta.append(titulo, contenido, autor);
+    contentContainer.append(titulo, contenido, autor);
+    carta.appendChild(contentContainer);
     noticiaContainer.appendChild(carta);
   });
 }

@@ -41,7 +41,7 @@
 }
 .noticia{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding-block: 100px;
   background-color: rgb(255, 255, 255);
   border-style: dashed solid;
