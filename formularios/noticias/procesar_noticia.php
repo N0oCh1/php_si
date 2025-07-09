@@ -1,38 +1,39 @@
+
 <?php
-require_once '../../clases/ImagenUploader.php';
-require_once '../../clases/c_Conexion.php';
-//archivo temporal hasta que Roy implemente el formulario real
+$conexion = new mysqli("localhost", "root", "", "noticia");
+
+if ($conexion->connect_error) {
+    die("Conexión fallida: " . $conexion->connect_error);
+}
+
 $titulo = $_POST['titulo'];
 $contenido = $_POST['contenido'];
-$tipo = $_POST['tipo'];
+$tipo_noticia = $_POST['tipo_noticia'];
 $autor = $_POST['autor'];
 
-try {
-    $uploader = new ImagenUploader("imagesDb/");
-    // Procesa imagen
-    $resultado = $uploader->procesarImagen($_FILES['imagen']); 
+$imagen_ruta = null;
+$tipo_imagen = null;
 
-    $ruta_imagen = $resultado['ruta_original'];
-    $tipo_imagen = $resultado['tipo'];
+if (isset($_FILES['imagen']) && $_FILES['imagen']['error'] === UPLOAD_ERR_OK) {
+    $nombre_tmp = $_FILES['imagen']['tmp_name'];
+    $nombre_archivo = uniqid() . "-" . basename($_FILES["imagen"]["name"]);
+    $ruta_destino = "imagesDb/" . $nombre_archivo;
 
-    $db = new mod_db();
-    $datos = [
-        "titulo" => $titulo,
-        "contenido" => $contenido,
-        "tipo_noticia" => $tipo,
-        "autor" => $autor,
-        "imagen" => $ruta_imagen,
-        "tipo_imagen" => $tipo_imagen,
-    ];
-
-    $exito = $db->insertSeguro("noticias", $datos);
-
-    if ($exito) {
-        echo "Noticia guardada exitosamente con imagen.";
-    } else {
-        echo "Error al guardar en la base de datos.";
+    if (move_uploaded_file($nombre_tmp, $ruta_destino)) {
+        $imagen_ruta = $ruta_destino;
+        $tipo_imagen = $_FILES["imagen"]["type"];
     }
-
-} catch (Exception $e) {
-    echo "Error: " . $e->getMessage();
 }
+
+$stmt = $conexion->prepare("INSERT INTO noticias (titulo, contenido, tipo_noticia, imagen, tipo_imagen, autor) VALUES (?, ?, ?, ?, ?, ?)");
+$stmt->bind_param("ssssss", $titulo, $contenido, $tipo_noticia, $imagen_ruta, $tipo_imagen, $autor);
+
+if ($stmt->execute()) {
+    echo "Noticia agregada correctamente. <a href='agregar_noticia.php'>Agregar otra</a>";
+} else {
+    echo "Error al agregar noticia: " . $stmt->error;
+}
+
+$stmt->close();
+$conexion->close();
+?>

@@ -15,7 +15,7 @@ class mod_db
 		$sql_host = "127.0.0.1";
 		$sql_name = "noticia";
 		$sql_user = "root";	
-		$sql_pass = "demo";
+		$sql_pass = "";
 		$charset = 'utf8mb4';
 
 		$dsn = "mysql:host=$sql_host;dbname=$sql_name;charset=utf8mb4";
