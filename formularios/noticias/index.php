@@ -9,9 +9,9 @@
 </head>
 <body>
   <main class="Main">
-    <header class="encabezado">
-      Encabezado 
-    </header>
+   <?php
+    include_once("../componente/header.php");
+   ?>
     <div class="noticia-container" id="noticias">
       
     </div>
@@ -22,6 +22,14 @@
           Buscar noticia por titulo
         </label>
         <input id="buscarNoticia" type="text" name="titulo" placeholder="Titulo ......"/>
+      </div>
+      <div class="inputCrearNoticia">
+        <h2>
+          Tag Cloud
+        </h2>
+        <a href="./crear/index?t=Noticia"><button class="crearNoticia">Agregar una noticia</button></a>
+        <a href="./crear/index?t=Evento"><button class="crearNoticia">Agregar un evento</button></a>
+        <a href="./crear/index?t=Deporte"><button class="crearNoticia">Agregar una noticia deportiva</button></a>
       </div>
     </div>
   </main>

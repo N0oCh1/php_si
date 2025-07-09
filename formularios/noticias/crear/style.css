@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;;
+}
+main{
+  display: flex;
+  padding: 2rem;
+  flex-direction: row;
+  align-items: center;
+  height: 100vh;
+}
+#form-create-news{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.imagen-preview{
+  width: 50%;
+  background-color: "#ffb3b3";
+}
+.imagen{
+  width: 100%;
+  max-width: 500px;
+  min-width: 100px;
+  object-fit: contain;
+}
+.inputForm{
+  display: flex;
+  flex-direction: column;
+}
