@@ -19,6 +19,19 @@ document.getElementById("imagen").addEventListener("change", ()=>{
 
 document.getElementById("form-create-news").addEventListener("submit", async(e)=>{
   e.preventDefault()
+  const params = new URLSearchParams(window.location.search)
+  const tipo_noticia = params.get("t")
   const formData = new FormData(e.target)
-  console.log("datos", ...formData)
-})
+  formData.append("tipo", tipo_noticia)
+  console.log(...formData)
+  try{
+    const response = await fetch("../c_procesar_noticia.php", {
+    method: "POST",
+    body: formData
+  }).then(res=>res.json())
+  console.log(response)
+  }
+  catch(error){
+    console.log(error)
+  }
+})  
