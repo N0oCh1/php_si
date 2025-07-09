@@ -96,6 +96,7 @@ CREATE TABLE `usuarios` (
   `HashMagic` varchar(255) DEFAULT NULL,
   `FechaSistema` date DEFAULT NULL,
   `secret_2fa` varchar(255) DEFAULT NULL,
+  `activo` tinyint(1) NOT NULL DEFAULT 1,
   PRIMARY KEY (`id`),
   UNIQUE KEY `Usuario` (`Usuario`),
   UNIQUE KEY `Correo` (`Correo`)
