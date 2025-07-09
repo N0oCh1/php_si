@@ -92,6 +92,8 @@ public function insertSeguro($tb_name, $data)
 
 	}
 
+	
+
 	public function updateSeguro($tabla, $data, $condiciones)
 {
     // Construir partes de SET dinámicamente
@@ -207,16 +209,20 @@ public function insertSeguro($tb_name, $data)
 	}
 	public function ObtenerUsuario1 ($user) {
 		try{
-			$sql = "SELECT * From usuarios where usuario = '$user'";
-			$stml = $this->conexion->prepare($sql);
-			$stml->execute();
-			return $stml->fetch();
+			$sql = "SELECT * FROM usuarios WHERE usuario = :usuario LIMIT 1";
+			$stmt = $this->conexion->prepare($sql);
+			$stmt->bindValue(':usuario', $user, PDO::PARAM_STR);
+			$stmt->execute();
+			return $stmt->fetch(PDO::FETCH_ASSOC);
 		}
 		catch(PDOException $e){
-			echo "Erro de base de datos => ".$e->getMessage();
+			echo "Error de base de datos => ".$e->getMessage();
+			return false;
 		}
-		
 	}
+	
+	  
+	  
 
 	public function obtenerNoticias() {
 		try{

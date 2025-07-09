@@ -1,5 +1,5 @@
 <?php
-include("../clases/SanitizarEntrada.php");
+include("SanitizarEntrada.php");
 
 
 
@@ -9,7 +9,6 @@ class RegistrarUsuarios {
   private string $lastName;
   private string $email;
   private string $user;
-  private string $sex;
 
   private string $secret_2fa;
   private String $password;
@@ -33,7 +32,7 @@ class RegistrarUsuarios {
     $this->email = $sanitizar::limpiarCadena($datos['email'] ?? '');
     $this->user = $sanitizar::limpiarCadena($datos['user'] ?? '');
     $this->password = $sanitizar::limpiarCadena($datos['hash'] ?? '');
-    $this->sex = $sanitizar::limpiarCadena($datos['sex'] ?? '');
+
   }
 
   public function GuardarUsuario(){
@@ -86,5 +85,64 @@ class RegistrarUsuarios {
     $arr = $this->pdo ->ObtenerUsuario1($this->user);
     return $arr;
   }
+
+
+  public function actualizarUsuario($id, $data) {
+    $sanitizar = new SanitizarEntrada();
+
+    $datos = [
+        "Nombre"   => $sanitizar::limpiarCadena($data['name'] ?? ''),
+        "Apellido" => $sanitizar::limpiarCadena($data['lastName'] ?? ''),
+        "Correo"   => $sanitizar::limpiarCadena($data['email'] ?? ''),
+        "Usuario"  => $sanitizar::limpiarCadena($data['user'] ?? ''),
+
+    ];
+
+    $sql = "UPDATE {$this->table} SET Nombre = ?, Apellido = ?, Correo = ?, Usuario = ?  WHERE id = ?";
+    $stmt = $this->pdo->prepare($sql);
+    return $stmt->execute([
+        $datos['Nombre'],
+        $datos['Apellido'],
+        $datos['Correo'],
+        $datos['Usuario'],
+
+        $id
+    ]);
+}
+
+
+public function actualizarPassword($id, $nuevaClave) {
+  $hash = password_hash($nuevaClave, PASSWORD_DEFAULT);
+  
+  $sql = "UPDATE {$this->table} SET HashMagic = :hash WHERE id = :id";
+  $stmt = $this->pdo->prepare($sql);
+  $stmt->bindValue(':hash', $hash);
+  $stmt->bindValue(':id', $id);
+  
+  return $stmt->execute();
+}
+
+public function desactivarUsuario($id) {
+  $sql = "UPDATE {$this->table} SET activo = 0 WHERE id = ?";
+  $stmt = $this->pdo->prepare($sql);
+  return $stmt->execute([$id]);
+}
+
+public function activarUsuario($id) {
+  $sql = "UPDATE {$this->table} SET activo = 1 WHERE id = ?";
+  $stmt = $this->pdo->prepare($sql);
+  return $stmt->execute([$id]);
+}
+
+
+
+public function obtenerPorId($id) {
+  $sql = "SELECT * FROM $this->table WHERE id = ?";
+  $stmt = $this->pdo->prepare($sql);
+  $stmt->execute([$id]);
+  return $stmt->fetch(PDO::FETCH_ASSOC);
+}
+
+
 }
 ?>

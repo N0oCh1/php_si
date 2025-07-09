@@ -18,8 +18,8 @@
 					<div class="b-service">
 						<div  class="service-image m-literature">
 						</div>
-						<h3 class="centered">Etiqueta 2</h3>
-						<p class="centered"><a href="#" class="dark-link"> M&oacute;dulo 2</a></p></a>
+						<h3 class="centered">Gestión de Usuarios</h3>
+						<p class="centered"><a href="./usuarios/index.php" class="dark-link"> M&oacute;dulo 2</a></p></a>
                         
 					</div>
 					<!-- End Icon Box -->
